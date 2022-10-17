@@ -35,6 +35,10 @@ export default function Navbar() {
                                 <NavLink to='/articles' className={({ isActive, isPending }) => (isActive ? 'active font-medium' : isPending ? 'pending' : '')}>
                                     Article
                                 </NavLink>
+
+                                <NavLink to='/counting' className={({ isActive, isPending }) => (isActive ? 'active font-medium' : isPending ? 'pending' : '')}>
+                                    Count
+                                </NavLink>
                                 {/* <a href='#' className='text-base font-medium text-gray-500 hover:text-gray-900'>
                                     Docs
                                 </a> */}

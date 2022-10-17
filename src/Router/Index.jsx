@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import Error from '../Errors/Index'
 import App from '../App'
 import Article from '../Article'
+import Counting from '../Counting'
 
 const router = createBrowserRouter([
     {
@@ -14,6 +15,11 @@ const router = createBrowserRouter([
     {
         path: 'articles',
         element: <Article />,
+    },
+
+    {
+        path: 'counting',
+        element: <Counting />,
     },
 ])
 
