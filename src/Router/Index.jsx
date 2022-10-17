@@ -4,6 +4,7 @@ import Error from '../Errors/Index'
 import App from '../App'
 import Article from '../Article'
 import Counting from '../Counting'
+import Form from '../Form'
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
     {
         path: 'counting',
         element: <Counting />,
+    },
+
+    {
+        path: 'form',
+        element: <Form />,
     },
 ])
 

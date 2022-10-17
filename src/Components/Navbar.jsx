@@ -39,14 +39,11 @@ export default function Navbar() {
                                 <NavLink to='/counting' className={({ isActive, isPending }) => (isActive ? 'active font-medium' : isPending ? 'pending' : '')}>
                                     Count
                                 </NavLink>
-                                {/* <a href='#' className='text-base font-medium text-gray-500 hover:text-gray-900'>
-                                    Docs
-                                </a> */}
                             </nav>
                             <div className='flex items-center md:ml-12'>
-                                <a href='#' className='text-base font-medium text-gray-500 hover:text-gray-900'>
+                                <NavLink to='/form' className='text-base font-medium text-gray-500 hover:text-gray-900'>
                                     Sign in
-                                </a>
+                                </NavLink>
                                 <a
                                     href='#'
                                     className='ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700'>
