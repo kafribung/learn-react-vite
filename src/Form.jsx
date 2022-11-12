@@ -23,6 +23,11 @@ export default function Form() {
                         <div>Email: {form.email || '------'}</div>
                         <div>Password: {form.password || '------'}</div>
                     </div>
+                    {/* Jika tidak menggunakan fungsi onChange */}
+                    {/* <div>
+                        <Label htmlFor={'email'} text={'Email'} />
+                        <Input id={'email'} type={'text'} placeholder={'Email'} onChange={(e) => setForm({ email: e.target.value })} />
+                    </div> */}
                     <div>
                         <Label htmlFor={'email'} text={'Email'} />
                         <Input id={'email'} type={'text'} placeholder={'Email'} onChange={onChange} />

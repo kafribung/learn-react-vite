@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import Button from './Button'
 
-export default function Count({ value }) {
-    const [count, setCount] = useState(value)
+export default function Count({ initialValue }) {
+    const [count, setCount] = useState(initialValue)
 
     function handlerClick() {
         let newCount = count + 1

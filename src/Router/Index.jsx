@@ -30,12 +30,3 @@ const router = createBrowserRouter([
 ])
 
 export default router
-// export default function Router() {
-//     return createBrowserRouter([
-//         {
-//             path: '/',
-//             element: <div>Hello world!</div>,
-//             errorElement: <Error />,
-//         },
-//     ])
-// }
