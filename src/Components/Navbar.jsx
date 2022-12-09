@@ -43,6 +43,10 @@ export default function Navbar() {
                                 <NavLink to='/form' className={({ isActive, isPending }) => (isActive ? 'active font-medium' : isPending ? 'pending' : '')}>
                                     Form
                                 </NavLink>
+
+                                <NavLink to='/todo' className={({ isActive, isPending }) => (isActive ? 'active font-medium' : isPending ? 'pending' : '')}>
+                                    Todo
+                                </NavLink>
                             </nav>
                             <div className='flex items-center md:ml-12'>
                                 <NavLink to='/form' className='text-base font-medium text-gray-500 hover:text-gray-900'>

@@ -5,6 +5,7 @@ import App from '../App'
 import Article from '../Article'
 import Counting from '../Counting'
 import Form from '../Form'
+import Todo from '../Todo'
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
     {
         path: 'form',
         element: <Form />,
+    },
+
+    {
+        path: 'todo',
+        element: <Todo />,
     },
 ])
 
