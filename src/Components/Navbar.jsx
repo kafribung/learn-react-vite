@@ -1,5 +1,5 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react"
+import { NavLink } from "react-router-dom"
 
 export default function Navbar() {
     return (
@@ -28,24 +28,28 @@ export default function Navbar() {
                         </div>
                         <div className='hidden md:flex md:flex-1 md:items-center md:justify-between'>
                             <nav className='flex space-x-10'>
-                                <NavLink end to='/' className={({ isActive, isPending }) => (isActive ? 'active font-medium' : isPending ? 'pending' : '')}>
+                                <NavLink end to='/' className={({ isActive, isPending }) => (isActive ? "active font-medium" : isPending ? "pending" : "")}>
                                     Home
                                 </NavLink>
 
-                                <NavLink to='/articles' className={({ isActive, isPending }) => (isActive ? 'active font-medium' : isPending ? 'pending' : '')}>
+                                <NavLink to='/articles' className={({ isActive, isPending }) => (isActive ? "active font-medium" : isPending ? "pending" : "")}>
                                     Article
                                 </NavLink>
 
-                                <NavLink to='/counting' className={({ isActive, isPending }) => (isActive ? 'active font-medium' : isPending ? 'pending' : '')}>
+                                <NavLink to='/counting' className={({ isActive, isPending }) => (isActive ? "active font-medium" : isPending ? "pending" : "")}>
                                     Count
                                 </NavLink>
 
-                                <NavLink to='/form' className={({ isActive, isPending }) => (isActive ? 'active font-medium' : isPending ? 'pending' : '')}>
+                                <NavLink to='/form' className={({ isActive, isPending }) => (isActive ? "active font-medium" : isPending ? "pending" : "")}>
                                     Form
                                 </NavLink>
 
-                                <NavLink to='/todo' className={({ isActive, isPending }) => (isActive ? 'active font-medium' : isPending ? 'pending' : '')}>
+                                <NavLink to='/todo' className={({ isActive, isPending }) => (isActive ? "active font-medium" : isPending ? "pending" : "")}>
                                     Todo
+                                </NavLink>
+
+                                <NavLink to='/ref' className={({ isActive, isPending }) => (isActive ? "active font-medium" : isPending ? "pending" : "")}>
+                                    UseRef
                                 </NavLink>
                             </nav>
                             <div className='flex items-center md:ml-12'>

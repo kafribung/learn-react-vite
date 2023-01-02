@@ -1,37 +1,43 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter } from "react-router-dom"
 
-import Error from '../Errors/Index'
-import App from '../App'
-import Article from '../Article'
-import Counting from '../Counting'
-import Form from '../Form'
-import Todo from '../Todo'
+import Error from "../Errors/Index"
+import App from "../App"
+import Article from "../Article"
+import Counting from "../Counting"
+import Form from "../Form"
+import Todo from "../Todo"
+import UseRef from "../UseRef"
 
 const router = createBrowserRouter([
     {
-        path: '/',
+        path: "/",
         element: <App />,
         errorElement: <Error />,
     },
 
     {
-        path: 'articles',
+        path: "articles",
         element: <Article />,
     },
 
     {
-        path: 'counting',
+        path: "counting",
         element: <Counting />,
     },
 
     {
-        path: 'form',
+        path: "form",
         element: <Form />,
     },
 
     {
-        path: 'todo',
+        path: "todo",
         element: <Todo />,
+    },
+
+    {
+        path: "ref",
+        element: <UseRef />,
     },
 ])
 

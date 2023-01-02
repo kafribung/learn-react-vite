@@ -71,7 +71,7 @@ export default function Todo() {
                                                     <button
                                                         onClick={() => handlerCompleted(task.id)}
                                                         className={clsx(
-                                                            !task.completed ? "bg-green-300 hover:bg-green-500" : "bg-warning-300 hover:bg-warning-500",
+                                                            !task.completed ? "bg-green-300 hover:bg-green-500" : "bg-orange-300 hover:bg-orange-500",
                                                             " py-1 px-2 w-full rounded-md max-w-lg text-sm whitespace-nowrap shadow-sm "
                                                         )}>
                                                         {/* Icon */}
